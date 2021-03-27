@@ -1,0 +1,324 @@
+header{
+	text-align: left;
+	color: blue;
+	background-color: orange;
+	font-family: arial;
+	font-size: 15px;
+	padding: 5px 15px;
+}
+
+body{
+	background-color: black;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	font-family: arial;
+	font-size: 15px;
+}
+
+p.logo{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Brush Script MT', cursive;
+	margin: 0px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #009933;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+li input{
+	margin-top: 5px;
+	height: 30px;
+}
+
+li button{
+	height: 30px;
+}
+
+article{
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section{
+	background-color: white;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+article > div{
+	width: 30.89%;
+	float: left;
+	padding: 10px;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+@media screen and (max-width: 1345px) and (min-width: 768px){
+	div.film:nth-of-type(even){width:45.60%; float:right;}
+	div.film:nth-of-type(odd){width:45.60%; float:left;}
+}
+@media screen and (max-width: 768px){
+	div.film{width:100%;}
+}
+
+.titlufilm1{
+	font-size: 25px;
+	font-family: arial;
+	padding-left: 18px;
+	transition: color 2s 1s, transform 2s;
+}
+
+.titlufilm1:after{
+	content: ")";
+}
+
+.titlufilm1:hover{
+	color: blue;
+	transform: skew(180deg);
+}
+
+.titlufilm2{
+	font-size: 20px;
+	font-family: arial;
+	color: #808080;
+	padding-left: 18px;
+	padding-top: 3px;
+}
+
+.titlufilm2:before{
+	content: "Română: ";
+}
+
+p:nth-of-type(odd){
+	animation-name: parag1;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes parag1 {
+	0% {color: green;}
+	25% {color: blue;}
+	50% {color: yellow;}
+	100% {color: red;}
+}
+
+.informatii{
+	font-family: arial;
+	font-size: 13px;
+	padding: 20px 10px 10px 20px;
+}
+
+p::after{
+	content: "!";
+}
+
+img{
+	transition: transform 1s;
+}
+
+img:hover{
+	transform: rotate(360deg) scale(1.3);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #009933;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.LotR1{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Choristes{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Gump{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Amadeus{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Driving{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Silence{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Speech{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.HP3{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Nasul{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Cutite{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.SW4{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Indy1{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Odyssey{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Filantropica{
+	width: 40%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Se7en{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.BRunner{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Gladiator{
+	width: 35%;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+input#numefilm{
+	width: 400px;
+}
+
+textarea#MotivAdaugare{
+	width: 600px;
+	height: 150px;
+}
+
+form{
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
